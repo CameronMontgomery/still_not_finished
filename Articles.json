@@ -1,0 +1,57 @@
+{
+  "featuredArticle": [
+    {
+      "title": "7 Tips for Adjusting to Life After Incarceration",
+      "author": "Lifestyle",
+      "description": "life after incarceration is full of challenges. But it does't mean you are without options. Here are 7 essential tips to help adjust to life on the outside.",
+      "image": "./assets/images/articles/slide1.jpg"
+    },
+    {
+      "title": "6 Pillars of Veteran Recovery",
+      "author": "Brian Johnson",
+      "description": "One night I spend several hours discussing military life one night with a Vietnam Veteran. That night he said something that I will never forget \"it is easier to make a warrior out of a civilian than it is to make a civilian out of a warrior.\"",
+      "image": "./assets/images/articles/slide2.jpg"
+    },
+    {
+      "title": "Article 3",
+      "author": "Simon Simpleton",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ut sit culpa",
+      "image": "./assets/images/articles/slide3.jpg"
+    }],
+  "articles":[
+    {
+    "title": "A New Lens on Life",
+    "author": "Brian Johnson",
+    "description": "After returning from Iraq, Brian suffered traumatic brain injury and PTSD which led to multiple suicide attempts. But, he found a way out of the darkness using photography.",
+    "keyword": ["photography", "veteran", "suicide"],
+    "image": "still_not_finished/assets/images/articles/photo-bounce.jpg",
+    "post": "In 2005 I deployed to Iraq in support of Operation Iraqi Freedom. I was a wrecker operator for mounted missions throughout Iraq. As a wrecker operator I was basically a tow truck driver and would recover disabled vehicles. During my time in the Army I sustained several injuries that had a lasting impact on my life and more importantly my mind.
+    
+    After sustaining several Traumatic Brain Injuries (TBIs) I found myself dealing with major depression, anxiety, hyper-vigilance, post traumatic stress disorder (PTSD) alongside my physical ailments. Dealing with all of this through therapists, medications and group therapy was ineffective for me and I started to give up hope. In fact, I ultimately gave up all hope and this drove me down a dark pathway to suicide. After surviving two suicide attempts, and a major medical complication I started to dig myself out of the hole that I was in.\n
+    \n
+    I found myself using my artistic abilities and learning photography. Photography is a unique art that allows people to create artwork more instantly. Making pictures is something that is fun, relaxing, and therapeutic. I believe in the healing power of guided meditation and making pictures is a form of this in my mind.\n
+    \n
+    I have been practicing what I call photo-therapy for the past 6 years now. Today, I am happy to say that while I still suffer from mental illness, it is under control and I feel better than I have ever felt. When I make pictures, I get to tell stories that are otherwise trapped in my mind. The stories I tell are both happy and sad, funny and dramatic, but they allow me to talk about my mind which in turn promotes mental health and suicide prevention.\n
+    \n
+    Speaking about the mind is healing, but it is also the most difficult thing to do for someone dealing with mental illness. We need to encourage each other that normalizing mental illness is ok, we need to kill the stigma so that we can properly heal. This is especially true with our military veterans and our first responders.\n
+    \n
+    Photo-therapy is a form of recreation therapy, also known as rec therapy, that provides an alternative approach to group therapies. Group therapies are effective for some, but for others there is a need to open up the passage to the mind that traditional group therapies just do not allow for. Rec Therapies come in many forms, there is equestrian therapy, different sports therapies, and what we provide, photography therapy.\n
+    \n
+    So how does phototherapy help people dealing with mental illness? It is more simple than you would think. It opens up the mind and allows for people to socially engage in a different form. Mental illness blocks most from being able to effectively communicate what is distressing on the mind. Phototherapy opens up the avenue to discuss the mind without sharing words. It allows us to frame the world in a way that we want to see it or as real and raw as it is.\n"
+    },
+    {
+    "title": "How problem solving court saved my life",
+    "author": "Cameron Montgomery",
+    "description": "",
+    "image": ""
+    },
+    {
+    "title": "6 Pillars of Veteran Recovery",
+    "author": "Brian Johnson",
+    "description": "One night I spend several hours discussing military life one night with a Vietnam Veteran. That night he said something that I will never forget “it is easier to make a warrior out of a civilian than it is to make a civilian out of a warrior.",
+    "keyword": ["recovery", "veteran"],
+    "image": "still_not_finished/assets/images/articles/pillars.jpg"
+    }, 
+  ]
+
+}
