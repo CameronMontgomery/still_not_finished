@@ -98,7 +98,6 @@ prevBtn.addEventListener('click', () => {
   }
 })
 
-// Tab panels
 
 
 
