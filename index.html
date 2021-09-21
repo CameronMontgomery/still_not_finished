@@ -7,6 +7,9 @@
   <title>Still Not Finished</title>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <link rel="stylesheet" href="./main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
 </head>
@@ -18,7 +21,7 @@
     
         <div class="menu">
           <a href="#" class="is-active">Home</a>  
-          <a href="#">Blog</a> 
+          <a href="#blog">Blog</a> 
           <a href="./about.html">About</a>
           <a href="#">Sign In</a>
         </div>
@@ -33,9 +36,8 @@
   
     <nav class="mobile-nav">
       <a href="#" class="is-active">Home</a>
-      <a href="#">Blog</a>
+      <a href="#blog">Blog</a>
       <a href="./about.html">About</a>
-      <a href="./contact.html">Contact</a>
       <a href="#">Sign In</a>
     </nav>
   </div>
@@ -57,7 +59,8 @@
       </div>
     </section>
     
-    <section class="blog-wrap">
+    <section class="blog-wrap" id="blog">
+      <h1 class="header__title">RECENT<span>POSTS</span></h1>
       <div class="blog-post">
         <div class="blog-post__img">
           <img src="/still_not_finished/assets/images/articles/life-goes-on.jpg" alt="">
@@ -71,7 +74,7 @@
       </div>
       <div class="blog-post">
         <div class="blog-post__img">
-          <img src="/still_not_finished/assets/images/articles/better-ahead.jpg" alt="">
+          <img src="/still_not_finished/assets/images/articles/pillars.jpg" alt="">
         </div>
         <div class="blog-post__info">
           <h1 class="blog-post__title">Recovery Rocks</h1>
@@ -91,8 +94,39 @@
           <a href="#" class="blog-post__btn">Read More</a>
         </div>
       </div>
+      <div class="blog-post">
+        <div class="blog-post__img">
+          <img src="/still_not_finished/assets/images/articles/top-of-mountain.jpg" alt="">
+        </div>
+        <div class="blog-post__info">
+          <h1 class="blog-post__title">Recovery Rocks</h1>
+          <div class="blog-post__author">Joe Shmo</div>
+          <p class="blog-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est corrupti sint totam sed doloremque! Pariatur, earum. Deserunt sunt rem minima reiciendis nulla aperiam repellat tenetur? Aliquid aliquam doloribus labore dolor!</p>
+          <a href="#" class="blog-post__btn">Read More</a>
+        </div>
+      </div>
+      <div class="blog-post">
+        <div class="blog-post__img">
+          <img src="/still_not_finished/assets/images/articles/better-ahead.jpg" alt="">
+        </div>
+        <div class="blog-post__info">
+          <h1 class="blog-post__title">Recovery Rocks</h1>
+          <div class="blog-post__author">Joe Shmo</div>
+          <p class="blog-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est corrupti sint totam sed doloremque! Pariatur, earum. Deserunt sunt rem minima reiciendis nulla aperiam repellat tenetur? Aliquid aliquam doloribus labore dolor!</p>
+          <a href="#" class="blog-post__btn">Read More</a>
+        </div>
+      </div>
     </section>
   </main>
+  <footer>
+    <div class="footer-wrap">
+      <div class="footer-title">Still Not Finished | 2021</div>
+      <div class="footer-social">
+        <div class="footer-instagram"><a href="http://instagram.com"><img src="./assets/images/icons/3225191_app_instagram_logo_media_popular_icon (1).png" alt=""></a></div>
+        <div class="footer-facebook"><a href="http://www.facebook.com"><img src="./assets/images/icons/317752_facebook_social media_social_icon (1).png" alt=""></a></div>
+      </div>
+    </div>
+  </footer>
 
   <script src="./main.js"></script>
 </body>

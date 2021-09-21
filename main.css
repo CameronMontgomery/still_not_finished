@@ -25,7 +25,8 @@
 }
 
 body.index {
-  background: rgb(211, 211, 211)
+  /* background: rgb(211, 211, 211) */
+  background-color: #171717;
 }
 /* Styling below is for Nav and mobile nav */
 .container {
@@ -233,7 +234,7 @@ nav h1 span {
   width: 100%;
   height: 100%;
   max-height: 500px;
-  max-width: 1100px;
+  max-width: 1000px;
 }
 .featured .slider__slide {
   position: absolute;
@@ -309,7 +310,7 @@ nav h1 span {
 
 .slide-footer {
   width: 100%;
-  height: 60px;   
+  height: 30px;   
   background: #171717;
   position: relative;
 }
@@ -336,6 +337,8 @@ nav h1 span {
    }
 }
 
+/* field separation */
+
 /* blog cards styling */
 
 
@@ -347,11 +350,21 @@ nav h1 span {
   margin-top: 100px;
 }
 
+.blog-wrap .header__title {
+  color: var(--lt-highlight);
+  font-size: 28px;
+  font-weight: 700;
+}
+.blog-wrap .header__title span {
+  font-weight: 300;
+  color:#fff
+}
+
 .blog-post {
-  width: 100%;
+  width: 70%;
   max-width: 980px;
   margin: 25px 50px;
-  padding: 25px 50px;
+  padding: 15px 40px;
   background-color: #fff;
   box-shadow: 0 14px 80px rgba(0,0,0,.2);
   display: flex;
@@ -387,7 +400,8 @@ nav h1 span {
 .blog-post__author {
   margin: 0 0 15px 0;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 500;
+  color: var(--lt-highlight);
 }
 
 .blog-post__text {
@@ -434,6 +448,7 @@ nav h1 span {
   .blog-post {
     padding: 25px;
     flex-direction: column;
+    margin-top: 60px;
   }
 
   .blog-post__img {
@@ -443,7 +458,36 @@ nav h1 span {
   }
 }
 
+/* Footer Styling */
 
+.footer-wrap {
+  border-top: 1px solid #ed3d46;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+  margin-top: 50px;
+}
+
+.footer-title {
+  margin-top: 10px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.footer-social img{
+  width: 35px;
+  height: auto;
+}
+
+.footer-instagram, .footer-facebook {
+  padding: 10px;
+}
 
 /* Article styling */
 .post-wrap {
@@ -489,16 +533,22 @@ article .post-main p {
 
 /* about page styling */
 
+.body-about {
+  background-color: black;
+}
+
 .about-container {
+  
   display: flex;
   width: 100%;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #fff;
 }
 
 .about-wrap {
-  max-width: 350px;
+  max-width: 375px;
   margin-top: 100px;
   display: flex;
   justify-content: center;
@@ -506,7 +556,27 @@ article .post-main p {
   flex-direction: column;
 }
 
-.about-wrap h2 {
-  padding: 20px;
+.about-wrap img {
+  position: relative;
+  right: 15px;
+  width: 400px;
 }
 
+.about-wrap h2 {
+  margin: 20px;
+  border-bottom: 1px solid #ed3d46;
+}
+
+.about-wrap h2 span{
+  position: relative;
+  font-family: scratch, sans-serif;
+  font-size: 25px;
+  padding: 0 10px 0 5px;
+  color: var(--lt-highlight);
+  bottom: 8px;
+}
+
+.about-wrap p {
+  text-align:justify;
+  padding: 10px;
+}
