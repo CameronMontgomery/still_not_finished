@@ -9,12 +9,6 @@
   --lt-dark: #111566;
   --lt-highlight: #ed3d46;
   --lt-accent: #8d3fd0;
-
-  /* --dk-primary: #2f2fa2;
-  --dk-light: #99738e;
-  --dk-dark: #242582;
-  --dk-highlight: #f64c72;
-  --dk-dark-rd: #553d67; */
 }
 
 * {
@@ -192,11 +186,13 @@ nav h1 span {
 }
 
 /* Styling for Login signin-form */
-
+.signin-body, .signup-body {
+  background-color: #171717;
+}
 
 .signin-form, .signup-form {
   position:absolute;
-  top: 50%;
+  top: 400px;
   left: 50%;
   opacity: 1;
   transform: translate(-50%, -50%) scale(1.25);
@@ -250,7 +246,7 @@ nav h1 span {
   border: none;
   outline: none;
   font-size: 16px;
-  background: #222;
+  background: var(--lt-highlight);
   color: #f5f5f5;
   cursor: pointer;
   border-radius: 10px;
