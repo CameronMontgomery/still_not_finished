@@ -14,17 +14,22 @@ let signIn = document.querySelector('#signin-btn');
 let email = document.querySelector('#email')
 let password = document.querySelector('#password')
 
+signIn.addEventListener('click', verifyEvent)
+
 function verifyEvent(event) {
   event.preventDefault();
+  console.log('test')
   verifyUser();
 }
 
 function verifyUser() {
   let retrievedUser = localStorage.getItem('userStore');
   let parsedUser = JSON.parse(retrievedUser);
-  
-  if (parsedUser.userEmail == email && parsedUser.userPassword == password) {
+  console.log(parsedUser.userEmail)
+  console.log(email)
+  if (parsedUser.userEmail == email.value && parsedUser.userPassword == password.value) {
     console.log('success')
+    window.location.href = "./";
   } else {
     console.log('fail')
   }

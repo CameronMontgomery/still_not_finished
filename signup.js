@@ -16,20 +16,14 @@ let newPassword = document.querySelector('#passwordToAdd');
 signUp.addEventListener('click', addEvent)
 
 function addEvent(event) {
-  event.preventDefault();
-  addData(newEmail.value, newPassword.value);
-  alert('User Added');
+  event.preventDefault()
+  if (newEmail.value.length > 1 && newPassword.value.length > 1 ) {
+    addData(newEmail.value, newPassword.value);
+    alert('User Added')
+  } else {
+    alert('User not created. Please enter information and try again.')
+  }
 }
-
-// function addEvent(event) {
-//   event.preventDefault()
-//   if (newEmail.value === true && newPassword === true) {
-//     addData(newEmail.value, newPassword.value);
-//     alert('User Added')
-//   } else {
-//     alert('User not created. Please enter information and try again.')
-//   }
-// }
 
 function addData(email, password) {
   console.log(email, password)
