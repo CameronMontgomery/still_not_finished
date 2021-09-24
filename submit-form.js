@@ -8,7 +8,6 @@ submitPostBtn.addEventListener('click', addEvent);
 function addEvent(event) {
   event.preventDefault()
   if (title.value.length > 1 && author.value.length > 1 && post.value.length > 1) {
-    console.log('test')
     submitPost(title.value, author.value, post.value);;
     alert('Post Submitted for Review')
     window.location.href = "./member.html";
