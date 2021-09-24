@@ -82,8 +82,6 @@ axios.get('./Articles.json')
     }
   })
 
-  //recent posts code
-  document.querySelector('.blog-post__title1').innerText = response.data.articles[0]
 
 })
 .catch(function(err) {
