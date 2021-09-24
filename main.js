@@ -11,6 +11,7 @@ menuBtn.addEventListener('click', function () {
 // Slider Code and API call to receive slider articles
 axios.get('./Articles.json')
 .then(function(response) {
+  // carousel/featured article code
   const nextBtn = document.querySelector('#next');
   const prevBtn = document.querySelector('#prev');
   const slider = document.querySelector('.slider');
@@ -81,6 +82,8 @@ axios.get('./Articles.json')
     }
   })
 
+  //recent posts code
+  document.querySelector('.blog-post__title1').innerText = response.data.articles[0]
 
 })
 .catch(function(err) {
