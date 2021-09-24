@@ -1,4 +1,3 @@
-
 // nav bar and hamburger code
 const menuBtn = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-nav')
@@ -18,20 +17,16 @@ signIn.addEventListener('click', verifyEvent)
 
 function verifyEvent(event) {
   event.preventDefault();
-  console.log('test')
   verifyUser();
 }
 
 function verifyUser() {
   let retrievedUser = localStorage.getItem('userStore');
   let parsedUser = JSON.parse(retrievedUser);
-  console.log(parsedUser.userEmail)
-  console.log(email)
   if (parsedUser.userEmail == email.value && parsedUser.userPassword == password.value) {
-    console.log('success')
-    window.location.href = "./";
+    window.location.href = "./member.html";
   } else {
-    console.log('fail')
+    alert('Email and password do not match our records. Please try again or sign up to be a member.')
   }
 
 }

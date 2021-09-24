@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In</title>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <link rel="stylesheet" href="./main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body class="signin-body">
+  <div class="nav-wrap">
+    <nav>
+      <div class="container">
+        <h1>Still <span>Not</span> Finished</h1>
+    
+        <div class="menu">
+          <a href="./index.html">Home</a>  
+          <a href="./index.html#blog">Blog</a> 
+          <a href="./about.html">About</a>
+          <a href="./index.html"  class="is-active">Logout</a>
+        </div>
+    
+        <button class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  
+    <nav class="mobile-nav">
+      <a href="./index.html">Home</a>
+      <a href="./index.html#blog">Blog</a>
+      <a href="./about.html">About</a>
+      <a href="./index.html" class="is-active">Logout</a>
+    </nav>
+  </div>
+
+  <div class="submit-post-form">
+    <div class="form">
+      <h2>Submit a Post for Review</h2>
+      <div class="form-element">
+        <label for="input-title">Post Title</label>
+        <input type="text" id="input-title" placeholder="Enter Post's Title">
+      </div>
+      <div class="form-element">
+        <label for="input-author">Post Author</label>
+        <input type="text" id="input-author" placeholder="Enter Post's Author Name">
+      </div>
+      <div class="form-element">
+        <label for="input-message">Post</label>
+        <textarea id="input-message" class="form-control" placeholder="Type Your Post Here"></textarea>
+      </div>
+      <div class="form-element">
+        <button id=submit-post-btn>Submit Post</button>
+      </div>
+    </div>
+  </div>
+<script src="./submit-form.js"></script>
+</body>
+</html>

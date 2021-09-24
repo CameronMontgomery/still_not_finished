@@ -20,13 +20,13 @@ function addEvent(event) {
   if (newEmail.value.length > 1 && newPassword.value.length > 1 ) {
     addData(newEmail.value, newPassword.value);
     alert('User Added')
+    window.location.href = "./signin.html";
   } else {
     alert('User not created. Please enter information and try again.')
   }
 }
 
 function addData(email, password) {
-  console.log(email, password)
   let user = {
     userEmail: email,
     userPassword: password

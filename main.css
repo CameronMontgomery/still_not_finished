@@ -186,13 +186,17 @@ nav h1 span {
 }
 
 /* Styling for Login signin-form */
-.signin-body, .signup-body {
+.signin-body,
+.signup-body,
+.submit-post-form {
   background-color: #171717;
 }
 
-.signin-form, .signup-form {
+.signin-form,
+.signup-form,
+.submit-post-form {
   position:absolute;
-  top: 400px;
+  top: 500px;
   left: 50%;
   opacity: 1;
   transform: translate(-50%, -50%) scale(1.25);
@@ -204,7 +208,8 @@ nav h1 span {
 }
 
 .signin-form .form h2,
-.signup-form .form h2 {
+.signup-form .form h2,
+.submit-post-form .form h2 {
   text-align: center;
   color: #222;
   margin: 10px 0px 20px;
@@ -212,12 +217,14 @@ nav h1 span {
 }
 
 .signin-form .form .form-element,
-.signup-form .form .form-element {
+.signup-form .form .form-element,
+.submit-post-form .form .form-element {
   margin: 15px 0px;
 }
 
 .signin-form .form .form-element label,
-.signup-form .form .form-element label {
+.signup-form .form .form-element label,
+.submit-post-form .form .form-element label {
   font-size: 14px;
   color: #222;
 }
@@ -225,7 +232,9 @@ nav h1 span {
 .signin-form .form .form-element input[type="text"],
 .signin-form .form .form-element input[type="password"],
 .signup-form .form .form-element input[type="text"],
-.signup-form .form .form-element input[type="password"] {
+.signup-form .form .form-element input[type="password"],
+.submit-post-form .form .form-element input[type="text"],
+.submit-post-form .form .form-element textarea {
   margin-top: 5px;
   display: block;
   width: 100%;
@@ -235,12 +244,17 @@ nav h1 span {
   border-radius: 5px;
 }
 
+.submit-post-form .form .form-element textarea {
+  height: 200px;
+}
+
 .signin-form .form .form-element input[type="checkbox"] {
   margin-right: 5px;
 }
 
 .signin-form .form .form-element button,
-.signup-form .form .form-element button {
+.signup-form .form .form-element button,
+.submit-post-form .form .form-element button {
   width: 100%;
   height: 40px;
   border: none;
@@ -253,7 +267,8 @@ nav h1 span {
 }
 
 .signin-form .form .form-element a,
-.signup-form .form .form-element a {
+.signup-form .form .form-element a,
+.submit-post-form .form .form-element a {
   display: block;
   text-align: right;
   font-size: 15px;
