@@ -1,2 +1,4 @@
 # still_not_finished
 Still Not Finished Blog (capstone JR5)
+
+Version 1 - This was the original production that was hosted on Netlify. It was created to be a frontend capstone project for Justice ReSkill. This version used a mock JSON file to replicate a database. While featuring things like a sign up and sign in page, these were all just mock ups and used local storage to mock processes. Even though this version had many unfinished pieces due to ability level at the time it featured a responsive design with clean and easy to use UI. The shortcomings of version 1 and further learning in full-stack development now leads to the plans for version 2.
