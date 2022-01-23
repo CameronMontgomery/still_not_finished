@@ -1,0 +1,28 @@
+{
+  "name": "still_not_finished",
+  "version": "1.0.0",
+  "description": "Backend using Node.JS, Express, MongoDB, and HBS.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tribalash/still_not_finished.git"
+  },
+  "author": "Cameron Montgomery",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tribalash/still_not_finished/issues"
+  },
+  "homepage": "https://github.com/Tribalash/still_not_finished#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^6.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

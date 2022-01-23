@@ -1,10 +1,16 @@
 const mongoose = require('mongoose');
 
-const entrySchema = new mongoose.Schema({
+const articleSchema = new mongoose.Schema({
   title: {
     type: String,
-    trim: true
+    trim: true,
+    required: true
   }, 
+  Author: {
+    type: String,
+    trim: true,
+    required: true
+  },
   createdAt: {
     type: Date,
     default: Date.now
@@ -16,6 +22,6 @@ const entrySchema = new mongoose.Schema({
   }
 })
 
-const Entry = new mongoose.model('Entry', entrySchema)
+const Article = new mongoose.model('Entry', entrySchema)
 
-module.exports = Entry
+module.exports = Article
