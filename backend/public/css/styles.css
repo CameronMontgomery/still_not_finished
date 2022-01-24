@@ -645,12 +645,36 @@ article .post-main p {
   margin: 5px;
 }
 
-/* about page styling */
+
+/* Template view page default styling */
+.page-body {
+  background-color: black;
+}
+
+.page-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--white);
+}
+
+.page-wrap {
+  max-width: 375px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 
 .body-about {
   background-color: black;
 }
 
+/* about page styling */
 .about-container {
   display: flex;
   width: 100%;

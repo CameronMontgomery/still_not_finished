@@ -3,7 +3,7 @@ const express = require('express')
 const hbs = require('hbs')
 require('./db/mongoose')
 
-//const userRouter = require('./routes/userRouter')
+const userRouter = require('./routes/userRouter')
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -23,7 +23,7 @@ hbs.registerPartials(partialsPath)
 app.use(express.static(publicDirectoryPath))
 
 app.use(express.json())
-//app.use(userRouter)
+app.use(userRouter)
 
 app.get('/', (req, res) => {
   res.render('index')
@@ -31,6 +31,10 @@ app.get('/', (req, res) => {
 
 app.get('/about', (req, res) => {
   res.render('about')
+})
+
+app.get('/help', (req, res) => {
+  res.render('help')
 })
 
 app.get('/signIn', (req, res) => {

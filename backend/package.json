@@ -20,7 +20,8 @@
   "dependencies": {
     "express": "^4.17.2",
     "hbs": "^4.2.0",
-    "mongoose": "^6.1.7"
+    "mongoose": "^6.1.7",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
