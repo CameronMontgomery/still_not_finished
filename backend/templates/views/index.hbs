@@ -14,35 +14,7 @@
   
 </head>
 <body class="index">
-  <div class="nav-wrap">
-    <nav>
-      <div class="container">
-        <h1>Still <span>Not</span> Finished</h1>
-    
-        <div class="menu">
-          <a href="#">Home</a>  
-          <a href="#blog">Blog</a> 
-          <a href="./about.html">About</a>
-          <a href="./signin.html">Sign In</a>
-        </div>
-    
-        <button class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </nav>
-  
-    <nav class="mobile-nav">
-      <a href="#">Home</a>
-      <a href="#blog">Blog</a>
-      <a href="./about.html">About</a>
-      <a href="./signin.html">Sign In</a>
-    </nav>
-  </div>
-  
-  
+  {{>nav}}
   <main>
     <section class="slide-wrap">
       <header class="header">
@@ -120,15 +92,7 @@
       </div>
     </section>
   </main>
-  <footer>
-    <div class="footer-wrap">
-      <div class="footer-title">Still Not Finished | 2021</div>
-      <div class="footer-social">
-        <div class="footer-instagram"><a href="http://instagram.com"><img src="./assets/images/icons/3225191_app_instagram_logo_media_popular_icon (1).png" alt=""></a></div>
-        <div class="footer-facebook"><a href="http://www.facebook.com"><img src="./assets/images/icons/317752_facebook_social media_social_icon (1).png" alt=""></a></div>
-      </div>
-    </div>
-  </footer>
+{{>footer}}
 
   <script src="./js/app.js"></script>
 </body>
