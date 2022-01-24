@@ -6,40 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Still Not Finished | Member Sign Up</title>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="signup-body">
-  <div class="nav-wrap">
-    <nav>
-      <div class="container">
-        <h1>Still <span>Not</span> Finished</h1>
-    
-        <div class="menu">
-          <a href="./index.html">Home</a>  
-          <a href="./index.html#blog">Blog</a> 
-          <a href="./about.html">About</a>
-          <a href="./signin.html">Sign In</a>
-        </div>
-    
-        <button class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </nav>
-  
-    <nav class="mobile-nav">
-      <a href="./index.html">Home</a>
-      <a href="./index.html#blog">Blog</a>
-      <a href="./about.html">About</a>
-      <a href="./signin.html">Sign In</a>
-    </nav>
-  </div>
-
+  {{>nav}}
   <div class="signup-form">
     <div class="form">
       <h2>Register</h2>
@@ -52,13 +25,13 @@
         <input type="text" id="passwordToAdd" placeholder="Enter Password">
       </div>
       <div class="form-element">
-        <button id="signup-btn">Sign Up</button>
+        <button id="signup-btn" type="submit" formaction="/users" formmethod="post">Sign Up</button>
       </div>
       <div class="form-element">
-        <a href="./signin.html">Already a member? Sign In</a>
+        <a href="./signIn">Already a member? Sign In</a>
       </div>
     </div>
   </div>
-<script src="./signup.js"></script>
+<script src="./js/signUp.js"></script>
 </body>
 </html>

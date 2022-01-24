@@ -29,6 +29,20 @@ app.get('/', (req, res) => {
   res.render('index')
 })
 
+app.get('/about', (req, res) => {
+  res.render('about')
+})
+
+app.get('/signIn', (req, res) => {
+  res.render('signIn')
+})
+
+app.get('/signUp', (req, res) => {
+  res.render('signUp')
+})
+
+
+
 app.listen(port, () => {
   console.log(`Server is running on ${port}`)
 })

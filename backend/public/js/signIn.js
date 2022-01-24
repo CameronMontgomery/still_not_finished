@@ -24,7 +24,7 @@ function verifyUser() {
   let retrievedUser = localStorage.getItem('userStore');
   let parsedUser = JSON.parse(retrievedUser);
   if (parsedUser.userEmail == email.value && parsedUser.userPassword == password.value) {
-    window.location.href = "./member.html";
+    window.location.href = "./member";
   } else {
     alert('Email and password do not match our records. Please try again or sign up to be a member.')
   }
