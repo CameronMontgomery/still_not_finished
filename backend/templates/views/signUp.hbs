@@ -13,25 +13,38 @@
 </head>
 <body class="signup-body">
   {{>nav}}
-  <div class="signup-form">
-    <div class="form">
-      <h2>Register</h2>
-      <div class="form-element">
-        <label for="email">Email</label>
-        <input type="text" id="emailToAdd" placeholder="Enter Email">
-      </div>
-      <div class="form-element">
-        <label for="password">Password</label>
-        <input type="text" id="passwordToAdd" placeholder="Enter Password">
-      </div>
-      <div class="form-element">
-        <button id="signup-btn" type="submit" formaction="/users" formmethod="post">Sign Up</button>
-      </div>
-      <div class="form-element">
-        <a href="./signIn">Already a member? Sign In</a>
+  <form action="/users" method="post">
+    <div class="signup-form">
+      <div class="form">
+        <h2>Register</h2>
+        <div class="form-element">
+          <label for="firstName">First Name</label>
+          <input required type="text" name="firstName">
+        </div>
+        <div class="form-element">
+          <label for="lastName">Last Name</label>
+          <input required type="text" name="lastName">
+        </div>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input required type="text" name="email">
+        </div>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="passwordInput">
+        </div>
+        <div>
+          <input type="checkbox" onclick="showPassword()">Show Password
+        </div>
+        <div class="form-element">
+          <button id="signup-btn" type="submit">Sign Up</button>
+        </div>
+        <div class="form-element">
+          <a href="./signIn">Already a member? Sign In</a>
+        </div>
       </div>
     </div>
-  </div>
+  </form>
 <script src="./js/signUp.js"></script>
 </body>
 </html>
