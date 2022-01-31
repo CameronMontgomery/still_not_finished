@@ -13,30 +13,31 @@
 </head>
 <body class="signin-body">
   {{>nav}}
-
-  <div class="signin-form">
-    <div class="form">
-      <h2>Log in</h2>
-      <div class="form-element">
-        <label for="email">Email</label>
-        <input type="text" id="email" placeholder="Enter Email">
-      </div>
-      <div class="form-element">
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter Password">
-      </div>
-      <div class="form-element">
-        <input type="checkbox" id="remember-me">
-        <label for="remember-me">Remember Me</label>
-      </div>
-      <div class="form-element">
-        <button id=signin-btn>Sign In</button>
-      </div>
-      <div class="form-element">
-        <a href="./signUp">Not a Member? Sign up</a>
+  <form action="/users/login" method="post">
+    <div class="signin-form">
+      <div class="form">
+        <h2>Log in</h2>
+        <div class="form-element">
+          <label for="email">Email</label>
+          <input type="text" name="email" id="email">
+        </div>
+        <div class="form-element">
+          <label for="password">Password</label>
+          <input type="password" name="password" id="password" placeholder="Enter Password">
+        </div>
+        <div class="form-element">
+          <input type="checkbox" id="remember-me">
+          <label for="remember-me">Remember Me</label>
+        </div>
+        <div class="form-element">
+          <button id=signin-btn>Sign In</button>
+        </div>
+        <div class="form-element">
+          <a href="./signUp">Not a Member? Sign up</a>
+        </div>
       </div>
     </div>
-  </div>
+  </form>
 <script src="./js/signIn.js"></script>
 </body>
 </html>
