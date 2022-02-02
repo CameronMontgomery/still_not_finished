@@ -230,6 +230,8 @@ nav h1 span {
   color: var(--black);
 }
 
+.signin-form .form .form-element input[type="email"],
+.signup-form .form .form-element input[type="email"],
 .signin-form .form .form-element input[type="text"],
 .signin-form .form .form-element input[type="password"],
 .signup-form .form .form-element input[type="text"],
@@ -243,6 +245,18 @@ nav h1 span {
   outline: none;
   border: 1px solid #aaa;
   border-radius: 5px;
+}
+
+#passwordInput:focus:invalid {
+  border: 2px solid red;
+}
+
+#passwordInput:focus:valid {
+  border: 2px solid rgb(11, 211, 21);
+}
+
+#passwordReqText {
+  font-size: 9px;
 }
 
 .submit-post-form .form .form-element textarea {

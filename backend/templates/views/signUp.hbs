@@ -27,12 +27,14 @@
         </div>
         <div class="form-element">
           <label for="email">Email</label>
-          <input required type="text" name="email">
+          <input required type="email" name="email">
         </div>
         <div class="form-element">
           <label for="password">Password</label>
-          <input type="password" name="password" id="passwordInput">
+          <p id="passwordReqText">Please provide 6-20 upper & lowercase characters with numbers</p>
+          <input type="password" name="password" id="passwordInput" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$">
         </div>
+
         <div>
           <input type="checkbox" onclick="showPassword()">Show Password
         </div>
