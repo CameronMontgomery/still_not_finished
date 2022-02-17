@@ -6,7 +6,12 @@ const articleSchema = new mongoose.Schema({
     trim: true,
     required: true
   }, 
-  Author: {
+  author: {
+    type: String,
+    trim: true,
+    required: true
+  },
+  description: {
     type: String,
     trim: true,
     required: true

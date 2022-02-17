@@ -2,7 +2,9 @@ const path = require('path')
 const express = require('express')
 const hbs = require('hbs')
 require('./db/mongoose')
+const Article = require('./models/article')
 
+// Routers containing all the routes for users and articles
 const userRouter = require('./routes/userRouter')
 const articleRouter = require('./routes/articleRouter')
 
@@ -29,8 +31,20 @@ app.use(userRouter)
 app.use(articleRouter)
 
 
-app.get('/', (req, res) => {
-  res.render('index')
+app.get('/', async (req, res) => {
+  try {
+    const articles = await Article.find({});
+    res.render('index', {
+      articles
+    })
+  } catch (e) {
+    res.render('index', {
+      Error: 'Unable to retrieve articles, try again later.'
+    })
+  }
+
+
+
 })
 
 app.get('/about', (req, res) => {
