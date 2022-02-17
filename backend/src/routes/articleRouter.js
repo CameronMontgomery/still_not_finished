@@ -2,6 +2,9 @@ const express = require('express');
 const Article = require('../models/article');
 const router = new express.Router()
 
-router.post('/articles', async (req, res) => {
-  const article = new Article
+router.get('/new', async (req, res) => {
+  res.render('new')
 })
+
+
+module.exports = router;

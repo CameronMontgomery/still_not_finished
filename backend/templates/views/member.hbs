@@ -12,37 +12,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="signin-body">
-  <div class="nav-wrap">
-    <nav>
-      <div class="container">
-        <h1>Still <span>Not</span> Finished</h1>
-    
-        <div class="menu">
-          <a href="./index.html">Home</a>  
-          <a href="./index.html#blog">Blog</a> 
-          <a href="./about.html">About</a>
-          <a href="./index.html"  class="is-active">Logout</a>
-        </div>
-    
-        <button class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-    </nav>
-  
-    <nav class="mobile-nav">
-      <a href="./index.html">Home</a>
-      <a href="./index.html#blog">Blog</a>
-      <a href="./about.html">About</a>
-      <a href="./index.html" class="is-active">Logout</a>
-    </nav>
-  </div>
+  {{>nav}}
 
   <div class="submit-post-form">
     <div class="form">
-      <h2>Submit a Post for Review</h2>
+      <h2>Submit an Article</h2>
       <div class="form-element">
         <label for="input-title">Post Title</label>
         <input type="text" id="input-title" placeholder="Enter Post's Title">
@@ -60,6 +34,7 @@
       </div>
     </div>
   </div>
+
 <script src="./submit-form.js"></script>
 </body>
 </html>

@@ -194,14 +194,28 @@ nav h1 span {
 }
 
 .signin-form,
-.signup-form,
-.submit-post-form {
+.signup-form {
   position:absolute;
   top: 500px;
   left: 50%;
   opacity: 1;
   transform: translate(-50%, -50%) scale(1.25);
   width: 380px;
+  padding: 20px 30px;
+  background: var(--white);
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.submit-post-form {
+  position: relative;
+  top: 500px;
+  left: 50%;
+  opacity: 1;
+  margin: 80px 0 300px 0;
+  transform: translate(-50%, -50%) scale(1.25);
+  width: 60%;
+  max-width: 850px;
   padding: 20px 30px;
   background: var(--white);
   box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.2);
@@ -293,6 +307,8 @@ nav h1 span {
 }
 
 /* CSS below is for slider */
+
+
 
 
 .slide-wrap {
