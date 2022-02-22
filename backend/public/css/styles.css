@@ -514,10 +514,17 @@ nav h1 span {
 }
 
 .blog-post__author {
-  margin: 0 0 15px 0;
+  margin: 0 0 5px 0;
   font-size: 20px;
   font-weight: 500;
   color: var(--lt-highlight);
+}
+
+.blog-post__date {
+  margin: 0 0 15px 0;
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
 }
 
 .blog-post__text {
@@ -584,6 +591,7 @@ nav h1 span {
   flex-direction: column;
   color: var(--white);
   margin-top: 50px;
+  max-height: 200px;
 }
 
 .footer-title {

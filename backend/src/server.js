@@ -1,6 +1,5 @@
 const path = require('path')
 const express = require('express')
-const hbs = require('hbs')
 require('./db/mongoose')
 const Article = require('./models/article')
 
@@ -14,12 +13,12 @@ const port = process.env.PORT || 3000;
 // Express configuration paths
 const publicDirectoryPath = path.join(__dirname, '../public')
 const viewsPath = path.join(__dirname, '../templates/views')
-const partialsPath = path.join(__dirname, '../templates/partials')
+//const partialsPath = path.join(__dirname, '../templates/partials')
 
 // Templating config
-app.set('view engine', 'hbs')
+app.set('view engine', 'ejs')
 app.set('views', viewsPath)
-hbs.registerPartials(partialsPath)
+// hbs.registerPartials(partialsPath)
 
 
 // config static directory
@@ -34,17 +33,17 @@ app.use(articleRouter)
 app.get('/', async (req, res) => {
   try {
     const articles = await Article.find({});
+    const featuredArticles = await Article.find({featured: true})
+    
     res.render('index', {
-      articles
+      articles,
+      featuredArticles
     })
   } catch (e) {
     res.render('index', {
       Error: 'Unable to retrieve articles, try again later.'
     })
   }
-
-
-
 })
 
 app.get('/about', (req, res) => {

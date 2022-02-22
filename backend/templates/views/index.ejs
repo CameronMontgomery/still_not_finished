@@ -14,7 +14,7 @@
   
 </head>
 <body class="index">
-  {{>nav}}
+  <%- include('../partials/nav.ejs') %>
   <main>
     <section class="slide-wrap">
       <header class="header">
@@ -34,9 +34,32 @@
     </section>
     
     <section class="blog-wrap" id="blog">
-      {{{articles}}}
-      {{!-- <h1 class="header__title">RECENT<span>POSTS</span></h1>
-      <div class="blog-post">
+      <h1 class="header__title">RECENT<span>POSTS</span></h1>
+      <% articles.forEach(article => { %>
+        <div class="blog-post">
+          <div class="blog-post__img">
+            <img src=<%= article.image %> alt="">
+          </div>
+          <div class="blog-post__info">
+            <h1 class="blog-post__title"><%= article.title %></h1>
+            <div class="blog-post__author"><%= article.author %></div>
+            <div class="blog-post__date"><%= article.createdAt.toLocaleDateString() %></div>
+            <p class="blog-post__text"><%= article.description %></p>
+            <a href="./vtc.html" class="blog-post__btn">Read More</a>
+          </div> 
+        </div>      
+      <% }) %>
+    </section>
+  </main>
+  <%- include('../partials/footer.ejs') %>
+
+  <script src="./js/app.js"></script>
+</body>
+</html>
+
+
+
+<!-- <div class="blog-post">
         <div class="blog-post__img">
           <img src="./assets/images/articles/life-goes-on.jpg" alt="">
         </div>
@@ -90,11 +113,4 @@
           <p class="blog-post__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est corrupti sint totam sed doloremque! Pariatur, earum. Deserunt sunt rem minima reiciendis nulla aperiam repellat tenetur? Aliquid aliquam doloribus labore dolor!</p>
           <a href="./vtc.html" class="blog-post__btn">Read More</a>
         </div>
-      </div> --}}
-    </section>
-  </main>
-{{>footer}}
-
-  <script src="./js/app.js"></script>
-</body>
-</html>
+      </div> -->

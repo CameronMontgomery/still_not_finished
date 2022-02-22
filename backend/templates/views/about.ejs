@@ -11,7 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="body-about">
-  {{>nav}}
+  <%- include('../partials/nav.ejs') %>
   <main>
     <div class="about-container">
       <div class='about-wrap'>
@@ -22,15 +22,7 @@
       </div> 
     </div>
   </main>
-  <footer>
-    <div class="footer-wrap">
-      <div class="footer-title">Still Not Finished | 2021</div>
-      <div class="footer-social">
-        <div class="footer-instagram"><a href="http://instagram.com"><img src="./assets/images/icons/3225191_app_instagram_logo_media_popular_icon (1).png" alt=""></a></div>
-        <div class="footer-facebook"><a href="http://www.facebook.com"><img src="./assets/images/icons/317752_facebook_social media_social_icon (1).png" alt=""></a></div>
-      </div>
-    </div>
-  </footer>
+  <%- include('../partials/footer.ejs') %>
     <script src="./js/app.js"></script>
 </body>
 </html>

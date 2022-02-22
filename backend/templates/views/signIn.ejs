@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="signin-body">
-  {{>nav}}
+  <%- include('../partials/nav.ejs') %>
   <form action="/users/login" method="post">
     <div class="signin-form">
       <div class="form">
@@ -23,7 +23,7 @@
         </div>
         <div class="form-element">
           <label for="password">Password</label>
-          <input type="password" name="password" id="password" placeholder="Enter Password">
+          <input type="password" name="password" id="password">
         </div>
         <div class="form-element">
           <input type="checkbox" id="remember-me">

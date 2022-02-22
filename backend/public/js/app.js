@@ -9,9 +9,11 @@ menuBtn.addEventListener('click', function () {
 })
 
 // Slider Code and API call to receive slider articles
-axios.get('./Articles.json')
+
+axios.get('./assets/Articles.json')
 .then(function(response) {
   // carousel/featured article code
+  console.log(response)
   const nextBtn = document.querySelector('#next');
   const prevBtn = document.querySelector('#prev');
   const slider = document.querySelector('.slider');
