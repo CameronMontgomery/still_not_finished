@@ -6,11 +6,13 @@
 
 </br>
 
-<p align="center">
+<div align="center">
 
 ![GIF demo - site overview](https://github.com/CameronMontgomery/still_not_finished/blob/master/assets/demos/overview-demo.gif)
 
-</p>
+<sub>GIF Demo is rather large and may take a moment to load</sub>
+
+</div>
 
 ## About
 
